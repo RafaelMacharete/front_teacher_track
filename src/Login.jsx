@@ -1,19 +1,19 @@
-import './Login.css'
+import './Login.css';
+import { Link } from 'react-router-dom';
 
-function App(props) {
-
+function Login() {
   return (
     <div>
       <form action="GET">
-      <img src="src/assets/images/senai_logo.png" alt="senai logo" width='234px' height='60px'/>
+        <img src="./public/images/senai_logo.png" alt="senai logo" width='234px' height='60px' />
         <label htmlFor="nif">NIF</label>
         <input type="text" name="nif" />
         <label htmlFor="senha">Senha</label>
         <input type="password" name='senha' />
-        <button type="submit">Entrar</button>
+        <Link to='/profile'><button type="submit">Entrar</button></Link>
       </form>
     </div>
   )
 }
 
-export default App
+export default Login;

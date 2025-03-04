@@ -22,7 +22,7 @@ form > input {
     margin: 5px 0;
 }
 
-form > button {
+form > a > button {
     margin-top: 10px;
     width: 208px;
     height: 30px;
@@ -32,6 +32,6 @@ form > button {
     cursor: pointer;
 }
 
-form>button:hover {
+form > a > button:hover {
     background-color: #087856;
 }
