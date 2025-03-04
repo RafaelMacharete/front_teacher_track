@@ -1,10 +1,10 @@
 import './Login.css'
 
-function App() {
+function App(props) {
 
   return (
     <div>
-      <form action="POST">
+      <form action="GET">
       <img src="src/assets/images/senai_logo.png" alt="senai logo" width='234px' height='60px'/>
         <label htmlFor="nif">NIF</label>
         <input type="text" name="nif" />
