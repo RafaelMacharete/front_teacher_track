@@ -2,3 +2,25 @@
     margin: 0;
     padding: 0;
 }
+
+.content-profile{
+    padding: 0 176px ;
+    padding-top: 15px;
+}
+
+.profile-info{
+    display: flex;
+    gap: 20px;
+    height: max-content;
+}
+
+.profile-info > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.profile-info > ul > li{
+    font-size: 1.6em;
+}
