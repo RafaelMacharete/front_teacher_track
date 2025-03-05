@@ -1,6 +1,6 @@
-import "./Header.css";
+import "./Navbar.css";
 
-function Header() {
+function Navbar() {
   return (
     <div className="navbar">
       <ul>
@@ -15,4 +15,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;

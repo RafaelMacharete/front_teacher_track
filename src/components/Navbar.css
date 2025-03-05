@@ -20,6 +20,7 @@
 .navbar > ul > img{
     border-radius: 6px;
 }
-.navbar > ul > li{
+.navbar > ul > div > li{
     font-size: larger;
+    color: bisque;
 }

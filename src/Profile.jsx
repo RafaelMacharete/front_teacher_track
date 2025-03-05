@@ -1,10 +1,10 @@
 import "./Profile.css";
-import Header from "./components/Header.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 function Profile() {
   return (
     <>
-      <Header />
+      <Navbar />
       <div className="content-profile">
         <div className="profile-info">
           <img src="./public/person-circle.svg" alt="" />
