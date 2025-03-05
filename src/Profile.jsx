@@ -118,7 +118,7 @@ function Profile() {
             <div className="modal-content">
               <h1>Registrar horário</h1>
               <img src="./public/x.svg" alt="x-close icon" width='30px' onClick={toggleModal} />
-              <form action="POST" className="modal-schedule-register">
+              <form action="" method="POST" className="modal-schedule-register">
                 <label htmlFor="input1">input1</label>
                 <input type="text" name="input1" />
 
