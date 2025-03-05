@@ -1,13 +1,10 @@
+import './Profile.css'
+import Header from './components/Header.jsx'
+
 function Profile() {
     return (
         <>
-            <nav>
-                <ul>
-                    <li>Início</li>
-                    <li>Cadastros</li>
-                    <li>Professores</li>
-                </ul>
-            </nav>
+            <Header/>
             <div>
                 <img src="" alt="" />
                 <ul>

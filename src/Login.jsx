@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 function Login() {
   return (
-    <div>
+    <div className='form-login'>
       <form action="GET">
-        <img src="./public/images/senai_logo.png" alt="senai logo" width='234px' height='60px' />
+        <img src="./images/senai_logo.png" alt="senai logo" width='234px' height='60px' />
         <label htmlFor="nif">NIF</label>
         <input type="text" name="nif" />
         <label htmlFor="senha">Senha</label>
