@@ -1,21 +1,80 @@
-.content-profile{
-    padding: 0 176px ;
-    padding-top: 15px;
+.content-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 25px;
 }
 
-.profile-info{
+.profile-info {
     display: flex;
     gap: 20px;
     height: max-content;
 }
 
-.profile-info > ul{
+.profile-info>ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     list-style-type: none;
 }
 
-.profile-info > ul > li{
+.profile-info>ul>li {
     font-size: 1.6em;
+}
+
+.teacher-schedule {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    gap: 20px;
+}
+
+.menu-button {
+    border: none;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75px;
+    height: 27px;
+    border-radius: 6px;
+    background-color: rgb(213, 213, 194);
+}
+
+.menu-button:hover {
+    background-color: rgb(196, 179, 154);
+}
+
+.dropdown-content>ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-radius: 8px;
+    border-color: #1F3D4E;
+    border-style: hidden;
+    font-size: 1.4em;
+}
+
+th, td {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+td:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+tr:hover > .highlight{
+    background-color: lightblue;
+}
+
+tr:nth-child(even){
+    background-color: #ca494d;
 }

@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #991818;
+    background-color: #0a6ba2;
     height: 60px;
     display: flex;
     flex-direction: column;
@@ -22,5 +22,5 @@
 }
 .navbar > ul > div > li{
     font-size: larger;
-    color: bisque;
+    color: #fff;
 }
