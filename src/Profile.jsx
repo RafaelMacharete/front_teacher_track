@@ -4,9 +4,20 @@ import Navbar from "./components/Navbar.jsx";
 
 function Profile() {
   const [dropdown, setDropdown] = useState(false);
+  const [modal, setModal] = useState(false);
 
   function toggleDropdown() {
     setDropdown(!dropdown);
+  }
+
+  function toggleModal() {
+    setModal(!modal);
+  }
+
+  function handleCellClick(event) {
+    if (event.target.tagName === 'TD' && event.target.className != 'highlight') {
+      setModal(!modal)
+    }
   }
 
   return (
@@ -49,7 +60,9 @@ function Profile() {
             </div>
           </div>
 
-          <table border="10">
+          <table
+            border="10"
+            onClick={handleCellClick}>
             <tr>
               <th>Horário</th>
               <th>Segunda</th>
@@ -100,6 +113,25 @@ function Profile() {
             </tr>
           </table>
 
+          {modal && <div className="modal-overlay" onClick={toggleModal}></div>}
+          {modal && (
+            <div className="modal-content">
+              <h1>Registrar horário</h1>
+              <img src="./public/x.svg" alt="x-close icon" width='30px' onClick={toggleModal} />
+              <form action="POST" className="modal-schedule-register">
+                <label htmlFor="input1">input1</label>
+                <input type="text" name="input1" />
+
+                <label htmlFor="input2">input2</label>
+                <input type="text" name="input2" />
+
+                <label htmlFor="input3">input3</label>
+                <input type="text" name="input3" />
+
+                <button type="submit">Registrar</button>
+              </form>
+            </div>
+          )}
 
         </div>
       </div>

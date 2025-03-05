@@ -34,10 +34,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75px;
-    height: 27px;
-    border-radius: 6px;
-    background-color: rgb(213, 213, 194);
+    width: 90px;
+    height: 35px;
+    background-color: rgb(255, 132, 116);
+    position: relative;
+    font-size: 1.3em;
+}
+
+.menu-button {
+    border-bottom: 1px solid rgb(149, 149, 149);
+    border-radius: 10px 10px 0px 0px;
 }
 
 .menu-button:hover {
@@ -49,6 +55,16 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: absolute;
+    background-color: rgb(255, 132, 116);
+    width: 90px;
+    height: max-content;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+}
+
+.dropdown-content>ul>li {
+    font-size: 1.3em;
 }
 
 table {
@@ -60,7 +76,8 @@ table {
     font-size: 1.4em;
 }
 
-th, td {
+th,
+td {
     text-align: center;
     padding: 10px;
     border-radius: 5px;
@@ -71,10 +88,71 @@ td:hover {
     cursor: pointer;
 }
 
-tr:hover > .highlight{
+tr:hover>.highlight {
     background-color: lightblue;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
     background-color: #ca494d;
+}
+
+/*
+Modal schedule register
+*/
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+    backdrop-filter: blur(2px); 
+    z-index: 0; 
+}
+
+.modal-content {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0a6ba2;
+    padding: 20px;
+    width: 425px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content>img {
+    position: absolute;
+    right: 0;
+    margin: 0px 10px 0 0;
+    cursor: pointer;
+}
+
+.modal-content>form {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    color: #fff;
+}
+
+.modal-content>form>input {
+    width: 300px;
+}
+.modal-content > form > button {
+    margin-top: 10px;
+    background-color: #c9c9c9;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.modal-content > form > button:hover {
+    background-color: rgb(148, 148, 148)
 }
