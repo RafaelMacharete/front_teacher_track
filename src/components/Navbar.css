@@ -1,0 +1,26 @@
+.navbar{
+    background-color: #0a6ba2;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.navbar > ul > div{
+    display: flex;
+    gap: 25px;
+}
+
+.navbar > ul > img{
+    border-radius: 6px;
+}
+.navbar > ul > div > li{
+    font-size: larger;
+    color: #fff;
+}
