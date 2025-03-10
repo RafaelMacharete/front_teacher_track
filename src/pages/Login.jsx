@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
 
-function App() {
+function Login() {
   const [modal, setModal] = useState(false);
 
   function toggleModal() {
@@ -37,4 +37,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
