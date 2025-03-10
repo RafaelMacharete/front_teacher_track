@@ -28,11 +28,10 @@ function App(){
                             <Home />
                         </ProtectedRoute>
                     }
-                >
+                />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<RegisterAndLogout />} />
                 <Route path="*" element={<NotFound /> }></Route>
-                </Route>
             </Routes>
         </BrowserRouter>
     )
