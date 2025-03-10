@@ -1,6 +1,6 @@
-import "./Profile.css";
+import "../styles/Profile.css";
 import React, { useState } from 'react';
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "../components/Navbar.jsx";
 
 function Profile() {
   const [dropdown, setDropdown] = useState(false);
